@@ -10,7 +10,7 @@ const InfoSection = ({trip}) => {
 
         <div className='my-5 flex flex-col gap-3'>
             <h2 className='font-bold text-xl'>
-                {trip?.userSelection?.Location}
+                {trip?.userSelection?.Location.toUpperCase()}
             </h2>
 
             <div className='flex justify-between'>

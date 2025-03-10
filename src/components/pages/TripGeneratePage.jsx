@@ -83,6 +83,7 @@ const TripGeneratePage = () => {
         }
 
         setloading(true);
+        console.log(formData);
 
         // generating the dynamic prompt
         const {Location, NoOfDays, Budget, People} = formData

@@ -52,11 +52,11 @@ const Header = () => {
             {user ?
                 <div className='flex items-center gap-5'>
                     <a href="/trip-generator">
-                        <Button variant='outline' className='rounded-full cursor-pointer'>+ Create trip</Button>
+                        <Button variant='outline' className='text-lg border-2 rounded-full cursor-pointer hover:scale-105 transition-all'>+ Create trip</Button>
                     </a>
 
                     <a href="/my-trips">
-                        <Button variant='outline' className='rounded-full cursor-pointer'>My Trip</Button>
+                        <Button variant='outline' className='text-lg border-2 rounded-full cursor-pointer hover:scale-105 transition-all'>My Trip</Button>
 
                     </a>
 
@@ -76,7 +76,7 @@ const Header = () => {
 
                 </div>
 
-                : <Button onClick={()=>setOpenDialog(true)}variant='outline' className='bg-zinc-900 text-white font-bold text-lg h-12 w-30 rounded-md'>Sign in</Button>
+                : <Button onClick={()=>setOpenDialog(true)}variant='outline' className='bg-zinc-900 text-white font-bold text-lg h-12 w-30 rounded-md cursor-pointer hover:scale-105 transition-all'>Sign in</Button>
             }
 
             <Dialog open={OpenDialog} onOpenChange={setOpenDialog}>

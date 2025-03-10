@@ -14,7 +14,7 @@ const LandingPage = () => {
         <p className='text-center font-bold text-2xl mt-10'>Your personal trip planner and travel curator, creating custom itenaries tailored to your preferences.</p>
 
         <Link to={'/trip-generator'}>
-        <Button className='bg-zinc-950 text-lg text-bold text-white h-15 w-40 rounded-2xl mt-10 hover:cursor-pointer'>Get Started</Button>
+        <Button className='bg-zinc-950 text-lg text-bold text-white h-15 w-40 rounded-2xl mt-10 hover:scale-110 transition-all cursor-pointer'>Get Started</Button>
         </Link>
         
 
