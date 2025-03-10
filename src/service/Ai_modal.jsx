@@ -1,9 +1,3 @@
-// const {
-//     GoogleGenerativeAI,
-//     HarmCategory,
-//     HarmBlockThreshold,
-// } = require("@google/generative-ai");
-
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
@@ -40,8 +34,3 @@ export const chatSession = model.startChat({
     ],
 });
 
-//     const result = await chatSession.sendMessage("Remember to replace IMAGE_URL_OF_A_POOL_AT_YOUR_CHOSEN_HOTEL and \"Your hotel's latitude\"/\"Your hotel's longitude\" with the actual information from the hotel that you book. ");
-//     console.log(result.response.text());
-// }
-
-// run();

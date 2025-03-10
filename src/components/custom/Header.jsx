@@ -16,6 +16,7 @@ import { googleLogout, useGoogleLogin } from '@react-oauth/google'
 import axios from 'axios'
 import { FcGoogle } from "react-icons/fc";
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -51,14 +52,14 @@ const Header = () => {
             <img src={logo_transparent} alt="Trip Hub" className='h-22 wi-50' />
             {user ?
                 <div className='flex items-center gap-5'>
-                    <a href="/trip-generator">
+                    <Link to="/trip-generator">
                         <Button variant='outline' className='rounded-full cursor-pointer'>+ Create trip</Button>
-                    </a>
+                    </Link>
 
-                    <a href="/my-trips">
+                    <Link to="/my-trips">
                         <Button variant='outline' className='rounded-full cursor-pointer'>My Trip</Button>
+                    </Link>
 
-                    </a>
 
                     <Popover>
                         <PopoverTrigger>

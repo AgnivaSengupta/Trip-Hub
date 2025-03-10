@@ -28,6 +28,7 @@ const TripGeneratePage = () => {
     const [loading, setloading] = useState(false);
     const navigate =  useNavigate();
 
+    // collecting the input form data
     const handleInputChange = (name, value)=>{
         
         setformData((prevState)=>(
@@ -38,7 +39,7 @@ const TripGeneratePage = () => {
         ))
     }
 
-    
+    // getting user detail from GOOGLE
     const getUserDetail = (tokenResponse)=>{
         axios.get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${tokenResponse?.access_token}`, {
             
@@ -100,7 +101,7 @@ const TripGeneratePage = () => {
         SaveTripDetails(TripData);
     }
 
-    // function for aving the ai response in firebase
+    // function for saving the ai response in firebase
     const SaveTripDetails = async (TripData)=>{
 
         setloading(true);
